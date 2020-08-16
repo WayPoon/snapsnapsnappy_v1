@@ -1,0 +1,24 @@
+﻿{% extends "_layout.html" %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+
+
+<form method="post" class="form" enctype=multipart/form-data>
+    <div class="form-group">
+        <label for="cameraName">Insert camera name: </label>
+        <input type="text" name="cameraName" required>
+    </div>
+
+    <div class="form-group">
+        <label for="cameraID">Insert camera identification number: </label>
+        <input type="number" name="cameraID" required>
+    </div>
+
+    <div class="form-group">
+        <label for="=cameraUse">Insert camera status: </label>
+        <input type="text" name="cameraUse" required>
+
+        <p><input type="submit" value="Insert">
+    </div>
+</form>
+{% endblock %}
