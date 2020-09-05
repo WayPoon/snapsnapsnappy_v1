@@ -15,10 +15,20 @@
                 <td>{{ y.userID }}</td>
                 <td>{{ y.userName }}</td>
                 <td>{{ y.roleID }}</td>
-                <td><a href="/loan?userID={{ y.userID }}">Choose</a></td>
-                <td></td>
             </tr>
+                
             {% endfor %}
         </tbody>
+        <td>
+            <form class="form" method="post">
+                <input type="hidden" value="{{ y.userID }}" name="userID" />
+                <!--TODO surely there's a better way to do this?-->
+                {% if {"eventID": event.eventID, "userID": session["userID"]} in buylist %}
+                <input type="submit" value="Remove" name="submit" />
+                {% else %}
+                <input type="submit" value="Add" name="submit" />
+                {% endif %}
+            </form>
+        </td>
     </table>
 {% endblock %}

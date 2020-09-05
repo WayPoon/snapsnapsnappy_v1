@@ -153,9 +153,8 @@ def loan():
         with connection.cursor() as cursor:
             sql  = "SELECT userName, userID, roleID FROM camerausers;"
             cursor.execute(sql)
-            buylist = cursor.fetchall()
+            camerausers = cursor.fetchall()
             connection.close()
-            print (menu)
             return render_template("loan.html", camerausers = camerausers)
     else:
         return redirect("/")
