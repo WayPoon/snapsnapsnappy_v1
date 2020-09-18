@@ -1,0 +1,32 @@
+﻿{% extends "_layout.html" %}
+{% block title %}Menu{% endblock %}
+{% block content %}
+    <title>Cameras Available For Borrowing</title>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Camera ID</th>
+                <th>Camera Availability</th>
+                <th>Camera Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in buylist %}
+            <tr>
+                <td>{{ x.userID }}</td>
+                <td>{{ x.cameraID }}</td>
+                <td>{{ x.cameraUse }}</td>
+                <td>{{ x.cameraName }}</td>
+                {% if session["roleID"] == 2 %}
+                <td><a href="/update?userID={{ x.userID }}">Modify</a></td>
+                <td><a href="/delete?userID={{ x.userID }}">Eradicate</a></td>
+                <td></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+﻿{% extends "_layout.html" %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form method="post" class="form" enctype=multipart/form-data>
+        <p>Insert your name: </p>
+        <p><input type="number" name="userID" hidden></p>
+
+        <p><input type="text" name="userName" required></></p>
+
+        <p>Insert your password: </p>
+        <p><input type="password" name="password" required></p>
+
+        <p>Insert status (1 to 3): </p>
+        <p><input type="number" name="roleID" required></p>
+
+        <p>Tell us how you look: </p>
+        <p><input type="file" name="camerapic" accept="image/*"></p>
+
+        <p><input type="submit" value="Insert">
+    </form>
+    {% endblock %}
+</body>
+</html>

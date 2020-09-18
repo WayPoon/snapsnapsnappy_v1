@@ -1,0 +1,26 @@
+﻿{% extends "_layout.html" %}
+{% block title %}Edit event{% endblock %}
+{% block content %}
+    <title>Available Cameras</title>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Camera Name</th>
+                <th>Camera ID</th>
+                <th>Camera Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in buylist %}
+            <tr>
+                <td>{{ x.cameraName }}</td>
+                <td>{{ x.cameraID }}</td>
+                <td>{{ x.cameraUse }}</td>
+                <td><a href="/loan?userID={{ x.userID }}">Send</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

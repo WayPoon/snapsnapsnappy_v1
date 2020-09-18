@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "snapsnapsnappy", "snapsnapsnappy\snapsnapsnappy.pyproj", "{7B102AE3-9C08-4AC6-87BF-9DCC53B77238}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B102AE3-9C08-4AC6-87BF-9DCC53B77238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B102AE3-9C08-4AC6-87BF-9DCC53B77238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B102AE3-9C08-4AC6-87BF-9DCC53B77238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B102AE3-9C08-4AC6-87BF-9DCC53B77238}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18B1813A-7B39-40DB-BBF4-D97A39B9F016}
+	EndGlobalSection
+EndGlobal
